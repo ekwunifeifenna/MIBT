@@ -1,0 +1,70 @@
+.contact__container{
+    background: var(--color-white);
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 4rem;
+    height: 30rem;
+    margin: 7rem auto;
+    border-radius: 1rem;
+}
+
+/* THE FORM */
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-right: 4rem;
+}
+
+.form__name{
+    display: flex;
+    gap: 1.2rem;
+
+}
+
+.contact__form input[type="text"]{
+    width: 50%
+}
+
+.contact__form input, textarea{
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg2);
+    color: var(--color-primary);
+
+}
+
+.contact__form .btn{
+    width: max-content;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+/* THE FORM FOR TABLETS*/
+ @media screen and (max-width: 1024px){
+
+    .contact__form{
+        align-self: center;
+        margin-right: 1.5rem;
+    }
+ }
+
+
+ /* THE FORM FOR PHONES*/
+ @media screen and (max-width: 600px){
+    .contact__form{
+        margin: 0 1.5rem 3rem;
+    }
+
+    .form__name{
+        flex-direction: column;
+    }
+
+    .form__name input{
+        width: 100%;
+
+    }
+ }
